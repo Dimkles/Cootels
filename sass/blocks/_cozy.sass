@@ -1,0 +1,41 @@
+.cozy
+    padding: 40px 0 80px 0
+    &__container
+        display: flex
+        align-items: center
+    &__image
+        flex: 1
+        & img
+            width: 384px
+            object-fit: cover
+    &__content
+        flex: 1
+    &__title
+        margin-bottom: 24px
+    &__text
+        margin-bottom: 16px
+    &__button
+        margin-top: 16px
+@media ( max-width: 1200px )
+    .cozy
+@media ( max-width: 980px )
+    .cozy
+        &__image
+            & img
+                width: 90%
+@media (max-width: 760px)
+    .cozy
+        &__image
+            min-width: 100%
+            text-align: center
+            margin-bottom: 40px
+            & img
+                width: 384px
+        &__container
+            flex-wrap: wrap
+@media (max-width: 480px)
+    .cozy
+        padding-bottom: 40px
+        &__image
+            & img
+                width: 100%

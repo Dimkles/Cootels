@@ -1,0 +1,67 @@
+.footer
+    padding: 120px 0
+    background-color: #0B265A
+    color: #D9DBDE
+    &__left
+        flex: 1 1
+    &__container
+        display: flex
+        justify-content: space-between
+    &__logo
+        margin-bottom: 13px
+        & a
+            color: #fff
+            font-family: 'Montserrat'
+            font-weight: 700
+            font-size: 32px
+            line-height: 39px
+    &__slogan
+        font-weight: 400
+        font-size: 16px
+        line-height: 28px
+        width: 180px
+        margin-bottom: 36px
+
+    &__links
+        display: flex
+        align-items: center
+        & a
+            display: inline-block
+            margin-right: 24px
+    &__right
+        flex: 1 1
+        display: flex
+        justify-content: space-between
+    &__list
+        & b
+            color: #fff
+            font-size: 16px
+            line-height: 19px
+            display: inline-block
+            margin-bottom: 24px
+        &_item
+            margin-bottom: 24px
+            & a
+                color: inherit
+                font-size: 16px
+                line-height: 19px
+@media ( max-width: 760px )
+    .footer
+        &__container
+            flex-wrap: wrap-reverse
+        &__left
+            flex: 1 0 100%
+        &__right
+            flex: 1 0 100%
+            margin-bottom: 60px
+@media ( max-width: 560px )
+    .footer
+        &__right
+            flex-wrap: wrap
+        &__list
+            margin-bottom: 30px
+
+        
+        
+
+    
