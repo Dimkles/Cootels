@@ -14,4 +14,25 @@ $(document).ready(function () {
         arrows:false,
         dots: true,
     });
+    $("a.anchor__rooms").on("click", function(e){
+        e.preventDefault();
+        var anchor = $(this).attr('href');
+        $('html, body').stop().animate({
+            scrollTop: $(anchor).offset().top - 60
+        }, 800);
+    });
+    $("a.anchor__reservation").on("click", function(e){
+        e.preventDefault();
+        var anchor = $(this).attr('href');
+        $('html, body').stop().animate({
+            scrollTop: $(anchor).offset().top - 60
+        }, 800);
+    });
+    $("a.anchor__contacts").on("click", function(e){
+        e.preventDefault();
+        var anchor = $(this).attr('href');
+        $('html, body').stop().animate({
+            scrollTop: $(anchor).offset().top - 60
+        }, 800);
+    });
 });
